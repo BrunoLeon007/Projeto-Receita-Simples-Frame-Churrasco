@@ -6,6 +6,8 @@
     text-decoration: none;
 }
 
+
+
 /* Estilo geral */
 body {
   font-family: Arial, sans-serif;
@@ -14,24 +16,27 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #b63939; /* Cor de fundo bege */
+  background-color: #110202; /* Cor de fundo bege */
+  background-image: -moz-linear-gradient();
+  
   
 }
 
 /* Frame do churrasco */
 .churrasco-frame {
   width: 350px;
-  border: 2px solid #d35400; /* Cor da borda inspirada em churrasco 🔥 */
+  border: 2px solid #f76809; /* Cor da borda inspirada em churrasco 🔥 */
   border-radius: 15px; /* Bordas arredondadas */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+  box-shadow: 0px 4px 15px rgba(236, 232, 232, 0.2); /* Efeito de sombra */
   background-color: #fff; /* Fundo do frame */
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation-duration: 3s;
 }
 
 .churrasco-frame:hover {
   transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+  box-shadow: 0px 6px 20px rgba(228, 213, 79, 0.3); /* Sombra mais intensa */
 }
 
 /* Conteúdo interno */
@@ -49,9 +54,11 @@ body {
 }
 
 /* Título */
-h2 {
-  color: #e74c3c; /* Vermelho vibrante */
-  margin: 10px 0;
+h1 {
+  color: transparent;
+  background-clip: text;
+  background-image: url(/assets/fire-17.gif.webp);
+  background-size: cover;
 }
 
 /* Texto */
@@ -60,3 +67,4 @@ p {
   font-size: 14px;
   line-height: 1.6;
 }
+
